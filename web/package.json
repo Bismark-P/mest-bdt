@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "format": "prettier --write \"**/*.tsx\" \"**/*.ts\"",
+    "format": "prettier --write \"src/**/*.tsx\" \"src/**/*.ts\"",
     "start": "next start",
     "lint": "eslint"
   },
@@ -13,14 +13,14 @@
     "@teamhanko/hanko-elements": "^2.2.0",
     "axios": "^1.13.2",
     "http-errors-enhanced": "^3.0.2",
-    "lucide-react": "^0.552.0",
+    "lucide-react": "^0.553.0",
     "next": "16.0.1",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^24.10.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",

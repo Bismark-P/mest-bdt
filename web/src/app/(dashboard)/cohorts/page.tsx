@@ -2,21 +2,20 @@ import { Trash2, Search, Eye } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
-
-
 export default function Cohorts() {
   return (
     <>
       <div className="flex flex-col px-2 rounded-lg shadow-md max-w-7xl mx-auto overflow-auto space-y-6 w-full sm:px-4 md:px-8 bg-[#1E2939]">
         {/* Title & Add Cohort Button */}
         <div className="flex items-center justify-between sm:justify-between mb-0.5">
-          <h1 className="text-2xl my-4 mb-2 font-semibold text-gray-600 text-center sm:text-left">Cohort List</h1>
-          <Link href={'/cohorts/add'}>
+          <h1 className="text-2xl my-4 mb-2 font-semibold text-gray-600 text-center sm:text-left">
+            Cohort List
+          </h1>
+          <Link href={"/cohorts/add"}>
             <button className="bg-[#432DD7] hover:bg-blue-400 text-white px-4 py-1 rounded-md font-medium text-sm transition-colors cursor-pointer">
               Add Cohort
             </button>
           </Link>
-
         </div>
 
         {/* Search Bar */}
@@ -48,16 +47,24 @@ export default function Cohorts() {
               />
             </div>
             <div className="flex-1 flex flex-col">
-              <h3 className="text-md font-semibold text-gray-800 mt-2.5">Cohort 1</h3>
+              <h3 className="text-md font-semibold text-gray-800 mt-2.5">
+                Cohort 1
+              </h3>
               <p className="text-gray-600 text-sm">
-                A group of talented entrepreneurs learning technology and business skills. This is a longer description to test card height consistency. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                A group of talented entrepreneurs learning technology and
+                business skills. This is a longer description to test card
+                height consistency. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit.
               </p>
               <button className="text-blue-600 text-xs underline w-fit hover:text-blue-800 cursor-pointer">
                 Read more
               </button>
             </div>
             <div className="flex justify-end items-end mt-2">
-              <Link href="/cohorts/2" className="p-2 hover:-translate-y-1 transition-all duration-300 flex items-center">
+              <Link
+                href="/cohorts/2"
+                className="p-2 hover:-translate-y-1 transition-all duration-300 flex items-center"
+              >
                 <Eye className="h-5 w-5 mr-[-12] text-[#432DD7]" />
               </Link>
               <button className="p-2 hover:-translate-y-1 transition-all duration-300">
@@ -75,19 +82,26 @@ export default function Cohorts() {
                 height={500}
                 className="object-cover w-full h-full rounded-md"
               />
-
             </div>
             <div className="flex-1 flex flex-col">
-              <h3 className="text-md font-semibold text-gray-800 mt-2.5">Cohort 2</h3>
+              <h3 className="text-md font-semibold text-gray-800 mt-2.5">
+                Cohort 2
+              </h3>
               <p className="text-gray-600 text-sm content-center">
-                A group of talented entrepreneurs learning technology and business skills. This is a longer description to test card height consistency. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                A group of talented entrepreneurs learning technology and
+                business skills. This is a longer description to test card
+                height consistency. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit.
               </p>
               <button className="text-blue-600 text-xs underline w-fit hover:text-blue-800 cursor-pointer">
                 Read more
               </button>
             </div>
             <div className="flex justify-end items-end mt-2">
-              <Link href="/cohorts/2" className="p-2 hover:-translate-y-1 transition-all duration-300 flex items-center">
+              <Link
+                href="/cohorts/2"
+                className="p-2 hover:-translate-y-1 transition-all duration-300 flex items-center"
+              >
                 <Eye className="h-5 w-5 mr-[-12] text-[#432DD7]" />
               </Link>
               <button className="p-2 hover:-translate-y-1 transition-all duration-300">
@@ -107,16 +121,23 @@ export default function Cohorts() {
               />
             </div>
             <div className="flex-1 flex flex-col">
-              <h3 className="text-md font-semibold text-gray-800 mt-2.5">Cohort 3</h3>
+              <h3 className="text-md font-semibold text-gray-800 mt-2.5">
+                Cohort 3
+              </h3>
               <p className="text-gray-600 text-sm">
-                Alumni cohort with established businesses and success stories. Success Stories everywhere Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Alumni cohort with established businesses and success stories.
+                Success Stories everywhere Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit.
               </p>
               <button className="text-blue-600 text-xs underline w-fit hover:text-blue-800 cursor-pointer">
                 Read more
               </button>
             </div>
             <div className="flex justify-end items-end mt-2 ">
-              <Link href="/cohorts/3" className="p-2 hover:-translate-y-1 transition-all duration-300 flex items-center">
+              <Link
+                href="/cohorts/3"
+                className="p-2 hover:-translate-y-1 transition-all duration-300 flex items-center"
+              >
                 <Eye className="h-5 w-5 mr-[-12] text-[#432DD7]" />
               </Link>
               <button className="p-2 hover:-translate-y-1 transition-all duration-300">
@@ -136,16 +157,22 @@ export default function Cohorts() {
               />
             </div>
             <div className="flex-1 flex flex-col">
-              <h3 className="text-md font-semibold text-gray-800 mt-2.5">Cohort 4</h3>
+              <h3 className="text-md font-semibold text-gray-800 mt-2.5">
+                Cohort 4
+              </h3>
               <p className="text-gray-600 text-sm">
-                Alumni cohort with established businesses and success stories. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Alumni cohort with established businesses and success stories.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </p>
               <button className="text-blue-600 text-xs underline w-fit hover:text-blue-800 cursor-pointer">
                 Read more
               </button>
             </div>
             <div className="flex justify-end items-end mt-2">
-              <Link href="/cohorts/3" className="p-2 hover:-translate-y-1 transition-all duration-300 flex items-center">
+              <Link
+                href="/cohorts/3"
+                className="p-2 hover:-translate-y-1 transition-all duration-300 flex items-center"
+              >
                 <Eye className="h-5 w-5 mr-[-12] text-[#432DD7]" />
               </Link>
               <button className="p-2 hover:-translate-y-1 transition-all duration-300">
@@ -165,16 +192,23 @@ export default function Cohorts() {
               />
             </div>
             <div className="flex-1 flex flex-col">
-              <h3 className="text-md font-semibold text-gray-800 mt-2.5">Cohort 5</h3>
+              <h3 className="text-md font-semibold text-gray-800 mt-2.5">
+                Cohort 5
+              </h3>
               <p className="text-gray-600 text-sm">
-                Previous year&apos;s cohort with successful graduates and startups from EdTech. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Previous year&apos;s cohort with successful graduates and
+                startups from EdTech. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
               </p>
               <button className="text-blue-600 text-xs underline w-fit hover:text-blue-800 cursor-pointer">
                 Read more
               </button>
             </div>
             <div className="flex justify-end items-end mt-2">
-              <Link href="/cohorts/2" className="p-2 hover:-translate-y-1 transition-all duration-300 flex items-center">
+              <Link
+                href="/cohorts/2"
+                className="p-2 hover:-translate-y-1 transition-all duration-300 flex items-center"
+              >
                 <Eye className="h-5 w-5 mr-[-12] text-[#432DD7]" />
               </Link>
               <button className="p-2 hover:-translate-y-1 transition-all duration-300">
@@ -194,16 +228,22 @@ export default function Cohorts() {
               />
             </div>
             <div className="flex-1 flex flex-col">
-              <h3 className="text-md font-semibold text-gray-800 mt-2.5">Cohort 6</h3>
+              <h3 className="text-md font-semibold text-gray-800 mt-2.5">
+                Cohort 6
+              </h3>
               <p className="text-gray-600 text-sm">
-                Alumni cohort with established businesses and success stories. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Alumni cohort with established businesses and success stories.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </p>
               <button className="text-blue-600 text-xs underline w-fit hover:text-blue-800 cursor-pointer">
                 Read more
               </button>
             </div>
             <div className="flex justify-end items-end mt-2">
-              <Link href="/cohorts/3" className="p-2 hover:-translate-y-1 transition-all duration-300 flex items-center">
+              <Link
+                href="/cohorts/3"
+                className="p-2 hover:-translate-y-1 transition-all duration-300 flex items-center"
+              >
                 <Eye className="h-5 w-5 mr-[-12] text-[#432DD7]" />
               </Link>
               <button className="p-2 hover:-translate-y-1 transition-all duration-300">

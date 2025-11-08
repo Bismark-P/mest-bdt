@@ -1,4 +1,3 @@
-
 export default function Dashboard() {
   return (
     <>
@@ -68,24 +67,49 @@ export default function Dashboard() {
           {/* Bar Chart */}
           <div className="h-48 sm:h-64 flex items-end justify-around gap-2 sm:gap-4 p-3 sm:p-4 border border-gray-200 dark:border-gray-700 rounded-xl sm:rounded-2xl bg-gray-50 dark:bg-[#111317]">
             <div className="flex flex-col items-center">
-              <div className="w-4 sm:w-6 bg-blue-500 dark:bg-blue-400 rounded-md" style={{ height: "100px" }}></div>
-              <span className="text-[10px] sm:text-xs mt-1 sm:mt-2 text-gray-600 dark:text-gray-400">Jan</span>
+              <div
+                className="w-4 sm:w-6 bg-blue-500 dark:bg-blue-400 rounded-md"
+                style={{ height: "100px" }}
+              ></div>
+              <span className="text-[10px] sm:text-xs mt-1 sm:mt-2 text-gray-600 dark:text-gray-400">
+                Jan
+              </span>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-4 sm:w-6 bg-green-500 dark:bg-green-400 rounded-md" style={{ height: "140px" }}></div>
-              <span className="text-[10px] sm:text-xs mt-1 sm:mt-2 text-gray-600 dark:text-gray-400">Feb</span>
+              <div
+                className="w-4 sm:w-6 bg-green-500 dark:bg-green-400 rounded-md"
+                style={{ height: "140px" }}
+              ></div>
+              <span className="text-[10px] sm:text-xs mt-1 sm:mt-2 text-gray-600 dark:text-gray-400">
+                Feb
+              </span>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-4 sm:w-6 bg-yellow-500 dark:bg-yellow-400 rounded-md" style={{ height: "120px" }}></div>
-              <span className="text-[10px] sm:text-xs mt-1 sm:mt-2 text-gray-600 dark:text-gray-400">Mar</span>
+              <div
+                className="w-4 sm:w-6 bg-yellow-500 dark:bg-yellow-400 rounded-md"
+                style={{ height: "120px" }}
+              ></div>
+              <span className="text-[10px] sm:text-xs mt-1 sm:mt-2 text-gray-600 dark:text-gray-400">
+                Mar
+              </span>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-4 sm:w-6 bg-purple-500 dark:bg-purple-400 rounded-md" style={{ height: "80px" }}></div>
-              <span className="text-[10px] sm:text-xs mt-1 sm:mt-2 text-gray-600 dark:text-gray-400">Apr</span>
+              <div
+                className="w-4 sm:w-6 bg-purple-500 dark:bg-purple-400 rounded-md"
+                style={{ height: "80px" }}
+              ></div>
+              <span className="text-[10px] sm:text-xs mt-1 sm:mt-2 text-gray-600 dark:text-gray-400">
+                Apr
+              </span>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-4 sm:w-6 bg-pink-500 dark:bg-pink-400 rounded-md" style={{ height: "130px" }}></div>
-              <span className="text-[10px] sm:text-xs mt-1 sm:mt-2 text-gray-600 dark:text-gray-400">May</span>
+              <div
+                className="w-4 sm:w-6 bg-pink-500 dark:bg-pink-400 rounded-md"
+                style={{ height: "130px" }}
+              ></div>
+              <span className="text-[10px] sm:text-xs mt-1 sm:mt-2 text-gray-600 dark:text-gray-400">
+                May
+              </span>
             </div>
           </div>
         </section>
@@ -108,17 +132,23 @@ export default function Dashboard() {
                 <tr className="border-b border-gray-200 dark:border-gray-800">
                   <td className="py-3">Created “Tech for Growth” Program</td>
                   <td className="py-3">Nov 5, 2025</td>
-                  <td className="py-3 text-green-600 dark:text-green-400">Success</td>
+                  <td className="py-3 text-green-600 dark:text-green-400">
+                    Success
+                  </td>
                 </tr>
                 <tr className="border-b border-gray-200 dark:border-gray-800">
                   <td className="py-3">Added “MEST Cohort 2025”</td>
                   <td className="py-3">Nov 3, 2025</td>
-                  <td className="py-3 text-green-600 dark:text-green-400">Success</td>
+                  <td className="py-3 text-green-600 dark:text-green-400">
+                    Success
+                  </td>
                 </tr>
                 <tr>
                   <td className="py-3">Updated “Startup Accelerator”</td>
                   <td className="py-3">Nov 1, 2025</td>
-                  <td className="py-3 text-yellow-600 dark:text-yellow-400">Pending</td>
+                  <td className="py-3 text-yellow-600 dark:text-yellow-400">
+                    Pending
+                  </td>
                 </tr>
               </tbody>
             </table>
