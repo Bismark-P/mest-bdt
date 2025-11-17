@@ -12,11 +12,11 @@ export class HankoUser {
   iss: string;
   session_id: string;
   sub: string;
-};
+}
 
 export const CurrentUser = createParamDecorator(
   (data: unknown, context: ExecutionContext) => {
     const request = context.switchToHttp().getRequest();
-    return request.user;
+    return request.user as HankoUser;
   },
 );
