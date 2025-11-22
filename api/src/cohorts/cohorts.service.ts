@@ -25,7 +25,9 @@ export class CohortsService {
   }
 
   async update(id: string, data: UpdateCohortDto) {
-    const updated = await this.cohortModel.findByIdAndUpdate(id, data, { new: true });
+    const updated = await this.cohortModel.findByIdAndUpdate(id, data, {
+      new: true,
+    });
     if (!updated) throw new NotFoundException('Cohort not found');
     return updated;
   }

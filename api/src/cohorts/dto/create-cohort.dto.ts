@@ -9,4 +9,3 @@ export class CreateCohortDto {
   @IsOptional()
   description?: string;
 }
-
