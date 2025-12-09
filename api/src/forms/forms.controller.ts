@@ -8,6 +8,7 @@ import {
   Body,
   Query,
   UseGuards,
+  ConflictException,
 } from '@nestjs/common';
 import {
   ApiBadRequestResponse,
@@ -28,21 +29,30 @@ export class FormsController {
 
   @UseGuards(AuthGuard)
   @Post()
-  @ApiCreatedResponse({ description: 'The form has been successfully created.' })
+  @ApiCreatedResponse({
+    description: 'The form has been successfully created.',
+  })
   @ApiBadRequestResponse({ description: 'Invalid input data provided.' })
-  create(@Body() createFormDto: CreateFormDto) {
+  async create(@Body() createFormDto: CreateFormDto) {
+    // Ensure form does not already exist
+    const formExists = await this.formsService.findOne({
+      name: createFormDto.name,
+    });
+    if (formExists) {
+      throw new ConflictException('Form already exists');
+    }
     return this.formsService.create(createFormDto);
   }
 
   @Get()
   @ApiOkResponse({ description: 'Forms retrieved successfully.' })
   findAll(@Query() { filter = '{}' }: { filter: string }) {
-    return this.formsService.findAll(JSON.parse(filter));
+    return this.formsService.findAll(JSON.parse(filter) as object);
   }
 
   @Get('count')
   countDocuments(@Query() { filter = '{}' }: { filter: string }) {
-    return this.formsService.countDocuments(JSON.parse(filter));
+    return this.formsService.countDocuments(JSON.parse(filter) as object);
   }
 
   @Get(':id')

@@ -6,9 +6,7 @@ import { Form, FormSchema } from './schemas/form.schema';
 
 @Module({
   imports: [
-    MongooseModule.forFeature([
-      { name: Form.name, schema: FormSchema },
-    ]),
+    MongooseModule.forFeature([{ name: Form.name, schema: FormSchema }]),
   ],
   controllers: [FormsController],
   providers: [FormsService],

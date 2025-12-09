@@ -6,8 +6,7 @@ import { Form } from './schemas/form.schema';
 @Injectable()
 export class FormsService {
   constructor(
-    @InjectModel(Form.name)
-    private readonly formModel: Model<Form>,
+    @InjectModel(Form.name) private readonly formModel: Model<Form>,
   ) {}
 
   create(doc: AnyKeys<Form>) {
